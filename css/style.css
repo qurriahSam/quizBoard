@@ -114,8 +114,14 @@ form span label:hover {
   font-size: 1.6em;
 }
 
-.results p {
+.results #showResult {
   color: var(--bs-text);
   font-size: 3em;
+  font-weight: 500;
+}
+
+.results #percentage {
+  color: var(--bs-text);
+  font-size: 1em;
   font-weight: 500;
 }
