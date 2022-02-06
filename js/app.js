@@ -44,13 +44,22 @@ btn.addEventListener("click", () => {
 
 const getResults = (userAnswers) => {
   let resultDisplay = document.querySelector("#showResult");
+  let percentDisplay = document.querySelector("#percentage");
   let answers = ["html", "ecma", "no"];
   let result = 0;
 
   for (let i = 0; i < answers.length; i++) {
     if (answers[i] === userAnswers[i]) {
-      result++;
+      result += 30;
     }
   }
-  resultDisplay.innerText = `${result}/3`;
+  resultDisplay.innerText = `${result}/90`;
+
+  if (result > 80) {
+    percentDisplay.innerText = "You have excellently passed.";
+  } else if (result >= 50 && result <= 80) {
+    percentDisplay.innerText = "You have fairly passed.";
+  } else {
+    percentDisplay.innerText = "You have scored poorly.";
+  }
 };
