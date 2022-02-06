@@ -14,7 +14,7 @@ This is a sample quiz website for showcasing HTML CSS and JavaScript.
 
 ### Screenshot
 
-![Website screenshot](./img/quizBoard.png)
+![Website screenshot](./assets/quizBoard.png)
 
 ### Requirements
 
