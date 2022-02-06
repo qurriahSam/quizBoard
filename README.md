@@ -32,9 +32,13 @@ This is a sample quiz website for showcasing HTML CSS and JavaScript.
 
 - JavaScript - Has been used to create the business logic.
 
+- Figma - Has been used to design the website
+
 ### Links
 
-- Live Site URL: [Quiz App](https://90150n.github.io/insuarance-website/)
+- Live Site URL: [Quiz App](https://qurriahsam.github.io/quizBoard/)
+
+- Figma Design Link: [Figma](https://www.figma.com/file/tZEpwhusyp2RyVkv7Hbely/QuizApp?node-id=0%3A1)
 
 [Go Back to the top](#Quiz_App)
 
