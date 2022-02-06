@@ -1,9 +1,18 @@
+let questionOneChoices = document.getElementsByName("htmlShortForm");
+let questionTwoChoices = document.getElementsByName("jsName");
+let questionThreeChoices = document.getElementsByName("cppLevel");
 let btn = document.querySelector(".submit");
 
+const resetChecked = (choices) => {
+  choices.forEach((choice) => {
+    if (choice.checked == true) {
+      choice.checked = false;
+    }
+  });
+  return;
+};
+
 btn.addEventListener("click", () => {
-  let questionOneChoices = document.getElementsByName("htmlShortForm");
-  let questionTwoChoices = document.getElementsByName("jsName");
-  let questionThreeChoices = document.getElementsByName("cppLevel");
   let userAnswers = [];
 
   const getUserAnswer = (choices) => {
@@ -20,6 +29,9 @@ btn.addEventListener("click", () => {
 
   if (userAnswers.length < 3) {
     alert("Kindly attempt all questions");
+    resetChecked(questionOneChoices);
+    resetChecked(questionTwoChoices);
+    resetChecked(questionThreeChoices);
     return;
   } else {
     getResults(userAnswers);
