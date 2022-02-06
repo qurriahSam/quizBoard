@@ -17,7 +17,13 @@ btn.addEventListener("click", () => {
   getUserAnswer(questionOneChoices);
   getUserAnswer(questionTwoChoices);
   getUserAnswer(questionThreeChoices);
-  getResults(userAnswers);
+
+  if (userAnswers.length < 3) {
+    alert("Kindly attempt all questions");
+    return;
+  } else {
+    getResults(userAnswers);
+  }
 });
 
 const getResults = (userAnswers) => {
