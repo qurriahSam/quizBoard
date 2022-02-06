@@ -16,6 +16,7 @@ const resetChecked = (choices) => {
 btn.addEventListener("click", () => {
   let userAnswers = [];
 
+  // get checked choices
   const getUserAnswer = (choices) => {
     choices.forEach((choice) => {
       if (choice.checked == true) {
@@ -42,6 +43,7 @@ btn.addEventListener("click", () => {
   }
 });
 
+// check correct answers
 const getResults = (userAnswers) => {
   let resultDisplay = document.querySelector("#showResult");
   let percentDisplay = document.querySelector("#percentage");
