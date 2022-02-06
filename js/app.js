@@ -21,6 +21,7 @@ btn.addEventListener("click", () => {
 });
 
 const getResults = (userAnswers) => {
+  let resultDisplay = document.querySelector("#showResult");
   let answers = ["html", "ecma", "no"];
   let result = 0;
 
@@ -29,4 +30,5 @@ const getResults = (userAnswers) => {
       result++;
     }
   }
+  resultDisplay.innerText = result;
 };
