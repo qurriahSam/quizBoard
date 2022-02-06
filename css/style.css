@@ -63,10 +63,11 @@ form span {
   border-radius: 10px;
   font-weight: 500;
   cursor: pointer;
+  border: 1px solid rgb(204, 204, 204);
 }
 
 form span:hover {
-  border: 3px;
+  border: 1px solid #ff9a7c;
 }
 
 form span label {
