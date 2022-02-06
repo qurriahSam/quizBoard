@@ -125,3 +125,15 @@ form span label:hover {
   font-size: 1em;
   font-weight: 500;
 }
+
+footer {
+  background-color: #afafaf;
+  padding: 1.5vh;
+  text-align: center;
+}
+
+footer p {
+  color: var(--bs-text);
+  font-size: 1em;
+  font-weight: 500;
+}
