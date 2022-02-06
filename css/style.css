@@ -98,3 +98,24 @@ form span label:hover {
 .submit:hover {
   background-color: rgb(0, 124, 0);
 }
+
+.results {
+  border: 1px solid var(--bs-border);
+  margin-top: 6vh;
+  padding: 6%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.results h2 {
+  color: var(--bs-text);
+  font-weight: 700;
+  font-size: 1.6em;
+}
+
+.results p {
+  color: var(--bs-text);
+  font-size: 3em;
+  font-weight: 500;
+}
