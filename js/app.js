@@ -3,6 +3,7 @@ let questionTwoChoices = document.getElementsByName("jsName");
 let questionThreeChoices = document.getElementsByName("cppLevel");
 let btn = document.querySelector(".submit");
 
+//clear checked choices
 const resetChecked = (choices) => {
   choices.forEach((choice) => {
     if (choice.checked == true) {
@@ -35,6 +36,9 @@ btn.addEventListener("click", () => {
     return;
   } else {
     getResults(userAnswers);
+    resetChecked(questionOneChoices);
+    resetChecked(questionTwoChoices);
+    resetChecked(questionThreeChoices);
   }
 });
 
