@@ -30,5 +30,5 @@ const getResults = (userAnswers) => {
       result++;
     }
   }
-  resultDisplay.innerText = result;
+  resultDisplay.innerText = `${result}/3`;
 };
