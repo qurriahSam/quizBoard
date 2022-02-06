@@ -17,4 +17,16 @@ btn.addEventListener("click", () => {
   getUserAnswer(questionOneChoices);
   getUserAnswer(questionTwoChoices);
   getUserAnswer(questionThreeChoices);
+  getResults(userAnswers);
 });
+
+const getResults = (userAnswers) => {
+  let answers = ["html", "ecma", "no"];
+  let result = 0;
+
+  for (let i = 0; i < answers.length; i++) {
+    if (answers[i] === userAnswers[i]) {
+      result++;
+    }
+  }
+};
