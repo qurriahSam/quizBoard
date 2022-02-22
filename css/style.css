@@ -81,6 +81,7 @@ form span label:hover {
   color: #9d3314;
 }
 
+.retake,
 .submit {
   background-color: rgb(0, 102, 0);
   color: #f0ebeb;
@@ -95,15 +96,21 @@ form span label:hover {
   border-radius: 5px;
 }
 
+.retake:hover,
 .submit:hover {
   background-color: rgb(0, 124, 0);
 }
 
+.retake {
+  display: none;
+  justify-content: center;
+}
+
 .results {
   border: 1px solid var(--bs-border);
-  margin-top: 6vh;
+  margin: 10vh auto;
   padding: 6%;
-  display: flex;
+  display: none;
   align-items: center;
   flex-direction: column;
 }
@@ -136,4 +143,12 @@ footer p {
   color: var(--bs-text);
   font-size: 1em;
   font-weight: 500;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
 }
