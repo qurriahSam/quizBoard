@@ -2,6 +2,8 @@ let questionOneChoices = document.getElementsByName("htmlShortForm");
 let questionTwoChoices = document.getElementsByName("jsName");
 let questionThreeChoices = document.getElementsByName("cppLevel");
 let btn = document.querySelector(".submit");
+let retakeBtn = document.querySelector(".retake");
+let a = 0;
 
 //clear checked choices
 const resetChecked = (choices) => {
@@ -41,6 +43,8 @@ btn.addEventListener("click", () => {
     resetChecked(questionTwoChoices);
     resetChecked(questionThreeChoices);
   }
+
+  elementsHide();
 });
 
 // check correct answers
@@ -65,3 +69,33 @@ const getResults = (userAnswers) => {
     percentDisplay.innerText = "You have scored poorly.";
   }
 };
+
+// hide elements on button Click
+const elementsHide = () => {
+  let firstQuestion = document.querySelector(".question1");
+  let secondQuestion = document.querySelector(".question2");
+  let thirdQuestion = document.querySelector(".question3");
+  let score = document.querySelector(".results");
+
+  if (a == 0) {
+    firstQuestion.classList.add("hide");
+    secondQuestion.classList.add("hide");
+    thirdQuestion.classList.add("hide");
+    score.classList.add("show");
+    retakeBtn.classList.add("show");
+    btn.classList.add("hide");
+    a++;
+  } else {
+    firstQuestion.classList.remove("hide");
+    secondQuestion.classList.remove("hide");
+    thirdQuestion.classList.remove("hide");
+    score.classList.remove("show");
+    retakeBtn.classList.remove("show");
+    btn.classList.remove("hide");
+    a--;
+  }
+};
+
+retakeBtn.addEventListener("click", () => {
+  elementsHide();
+});
