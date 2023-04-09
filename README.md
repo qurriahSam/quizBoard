@@ -10,7 +10,7 @@
 
 ## Description
 
-This is a sample quiz website for showcasing HTML CSS and JavaScript.
+This sophisticated quiz application has been expertly designed and developed using the latest HTML, CSS, and JavaScript technologies. Upon submission of the quiz, users are presented with an instant and comprehensive analysis of their results, enabling them to gauge their performance and identify areas for improvement. The application's intuitive and user-friendly interface ensures a seamless experience for users, allowing them to easily navigate through the quiz questions and submit their responses.
 
 ### Screenshot
 
